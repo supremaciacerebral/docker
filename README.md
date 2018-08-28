@@ -12,31 +12,31 @@ xxxx
 
 ## Iniciando o Docker
 
-  cd ~/dados/dockers/devilbox
+    cd ~/dados/dockers/devilbox
 
-  docker-compose up
+    docker-compose up
 
 ## Monitoramento de imagens e processos
 
-  docker --version && docker images && docker images ps && docker ps
+    docker --version && docker images && docker images ps && docker ps
 
 ## Acessar o DevilBox
 
-  http://localhost/
+http://localhost/
 
 ## Paralisar o DevilBox
 
-  Pressione control + C
+Pressione control + C
 
 ## Para uso após a reinicialização da máquina
 
-  cd ~/dados/dockers/devilbox
+    cd ~/dados/dockers/devilbox
 
-  docker-compose down --remove-orphans
+    docker-compose down --remove-orphans
 
-  cd ~/dados/dockers/devilbox
+    cd ~/dados/dockers/devilbox
 
-  docker-compose up
+    docker-compose up
 
 Ao reiniciar a máquina é carregado o servidor apache mas não o banco de dados devendo executar o comando acima.
 
@@ -44,7 +44,7 @@ Ao reiniciar a máquina é carregado o servidor apache mas não o banco de dados
 
 Edite o arquivo docker-compose.yml
 
-  php & http
+php & http
 
-   # Mount volumes related to ln -s htdocs
-   - /home/marcio/dados/:/home/marcio/dados/
+ # Mount volumes related to ln -s htdocs
+ - /home/marcio/dados/:/home/marcio/dados/
